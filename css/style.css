@@ -1,0 +1,245 @@
+/*! normalize.css v1.0.1 | MIT License */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}button,html,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:after,q:before{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ol,nav ul{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+* {
+    box-sizing: border-box;
+    font-family:'Baskervville', serif;
+}
+.container{
+    max-width: 100%;
+}
+h1 {
+    margin: 0;
+    font-family: 'Calistoga', cursive;
+    font-size: 90px;
+    color: white;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 25px;
+    font-family: 'Calistoga', cursive;
+    color: #3a5c78 ;
+    text-align: center;
+    margin: 100px auto 85px;
+}
+p {
+    font-family:'Baskervville', serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+nav {
+    background-color: #000000;
+}
+nav .logo {
+    text-align: center;
+}
+.logo img {
+    padding: 10px;
+}
+nav .nav-wrapper ul {
+    text-align: right;
+}
+footer ul {
+    text-align: left;
+}
+nav .nav-wrapper ul li, footer ul li {
+    display: inline-block;
+    font-size: 20px;
+}
+nav .nav-wrapper ul li a {
+    color: #ebebeb;
+    text-decoration: none;
+    font-family: 'Calistoga', cursive;
+    padding: 40px;
+}
+nav .nav-wrapper ul li a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #000000;
+}
+footer ul li a {
+    font-family: 'Calistoga', cursive;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ebebeb;
+    padding: 10px 20px;
+}
+footer i {
+    font-size: 20px;
+    padding: 10px 5px;
+    margin-top: 10px;
+}
+
+footer a, i{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+#main-page {
+    width: 100%;
+    background-image: url(../images/homepage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#eyeball {
+    display: block;
+    position: absolute;
+    width: 112px;
+    height: 112px;
+    top: 500px;
+    right: 325px;
+    z-index: -1;
+    background-image: url(../images/eyeball.png);
+    background-repeat: no-repeat;
+}
+#main-page .title {
+    padding: 50px 100px 350px;
+}
+#main-page .call-to-action {
+    padding-bottom: 20px;
+}
+.call-to-action .btn, .form-submit .btn {
+    height: 75px;
+    line-height: 75px;
+    padding: 0; 
+}
+#main-page .main-page-icon{
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+#burger-icon {
+    width: 15px;
+    height: 10px;
+}
+.card {
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    background-color: #3a5c78;
+    border-radius: 0;
+}
+.card .card-header {
+    height: 35px;
+    padding: 0;
+    border: 0;
+}
+.card button {
+    color: #ffffff;
+    font-family: 'Calistoga', cursive;
+}
+.card button:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.card .card-body ul {
+    padding: 0;
+    margin: 0;
+}
+.card .card-body ul li a {
+    color: #ebebeb;
+    text-decoration: none;
+    font-family: 'Calistoga', cursive;    
+}
+.white-button {
+    background-color: #ffffff;
+    color: #3a5c78;
+    text-decoration: none;
+    font-family:'Calistoga', cursive;
+    font-size: 25px;
+}
+.white-button:hover {
+    color: #df7d41;
+}
+.orange-button {
+    background-color: #df7d41;
+    color: #ffffff;
+    font-family:'Calistoga', cursive;
+    font-size: 25px;
+    margin: 50px auto;
+    border: 0;
+}
+.orange-button:hover {
+    background-color: #d14f23;
+    color: #ffffff;
+}
+#theatrelink {
+    color:#df7d41;
+}
+.content p {
+    text-align: justify;
+}
+.tickets p {
+    text-align: center;
+}
+.gallery {
+    margin: 40px 50px;
+}
+.gallery a img {
+    max-width: 100%;
+}
+.gallery figure {
+    padding: 0 80px 80px;
+}
+.gallery figcaption {
+    color: #000000;
+    font-family:'Calistoga', cursive;
+    font-size: 16px;
+    font-weight: 
+}
+.gallery a {
+    text-decoration: none;
+}
+.gallery figcaption:hover {
+    text-decoration: underline;
+}
+form {
+    margin-top: 70px;
+}
+form label{
+    font-family: 'Calistoga', cursive;
+}
+form .required {
+    color: #d14f23;
+    font-size: 
+}
+.theatre-info {
+    background-color:#3a5c78;
+    color: #ffffff;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.theatre-info iframe {
+    width: 100%;
+    height: 100%;
+    border: 10px solid #df7d41;
+}
+.theatre-info h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+    #main-page .title {
+        padding: 20px 20px 300px;
+        font-size: 40px;
+    }
+    h2 {
+        margin: 45px auto 45px;
+    }
+    .gallery {
+        margin: 0;
+    }
+    .gallery figure {
+        padding: 0 0 80px;
+    }
+    footer ul {
+        padding: 0;
+    }
+    footer ul li, #footer-icons {
+        width: 100%;
+        text-align: center;
+    }
+}
