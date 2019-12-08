@@ -5,10 +5,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     box-sizing: border-box;
     font-family:'Baskervville', serif;
 }
+body {
+    overflow-x: hidden;
+}
 .container{
     max-width: 100%;
 }
-h1 {
+#main-page .title h1 {
     margin: 0;
     font-family: 'Calistoga', cursive;
     font-size: 90px;
@@ -81,20 +84,33 @@ footer ul li a:hover {
 }
 #main-page {
     width: 100%;
-    background-image: url(../images/homepage.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #df7d41;
 }
-#eyeball {
+#eye {
     display: block;
     position: absolute;
-    width: 112px;
-    height: 112px;
-    top: 500px;
-    right: 325px;
-    z-index: -1;
-    background-image: url(../images/eyeball.png);
+    width: 850px;
+    height: 388px;
+    top: 230px;
+    right: -100px;
+    z-index: 10;
+    background-image: url(../images/eye.svg);
     background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+#eye-small {
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: 274px;
+    top: 445px;
+    right: 600px;
+    z-index: 10;
+    background-image: url(../images/eye.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
 }
 #main-page .title {
     padding: 50px 100px 350px;
@@ -110,6 +126,7 @@ footer ul li a:hover {
 #main-page .main-page-icon{
     font-size: 25px;
     padding-bottom: 50px;
+    background-color: #df7d41;
 }
 #burger-icon {
     width: 15px;
@@ -187,7 +204,6 @@ footer ul li a:hover {
     color: #000000;
     font-family:'Calistoga', cursive;
     font-size: 16px;
-    font-weight: 
 }
 .gallery a {
     text-decoration: none;
@@ -203,7 +219,6 @@ form label{
 }
 form .required {
     color: #d14f23;
-    font-size: 
 }
 .theatre-info {
     background-color:#3a5c78;
@@ -222,9 +237,36 @@ form .required {
 }
 
 @media only screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
     #main-page .title {
-        padding: 20px 20px 300px;
+        padding: 20px;
+        display: block;
+    }
+    #main-page .title  h1{
         font-size: 40px;
+    }
+    #eye {
+        position: relative;
+        float: right;
+        clear: both;
+        width: 300px;
+        height: 160px;
+        top: 0;
+        right: 0;
+    }
+    #eye-small {
+        position: relative;
+        float: right;
+        clear: both;
+        width: 210px;
+        height: 120px;
+        top: -30px;
+        right: 150px;
+    }
+    .call-to-action {
+        margin: 0;
     }
     h2 {
         margin: 45px auto 45px;
@@ -241,5 +283,31 @@ form .required {
     footer ul li, #footer-icons {
         width: 100%;
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1100px) {
+    #main-page .title {
+        font-size: 40px;
+        padding-left: 50px;
+    }
+    nav .nav-wrapper ul li a {
+        padding: 10px;
+        font-size: 16px;
+    }
+    #eye {
+        width: 600px;
+        height: 275px;
+        top: 320px;
+        right: -60px;
+    }
+    #eye-small {
+        width: 420px;
+        height: 190px;
+        top: 480px;
+        right: 400px;
+    }
+    .call-to-action {
+        margin: 0;
     }
 }
